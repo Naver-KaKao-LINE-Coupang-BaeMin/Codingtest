@@ -9,6 +9,15 @@ move = {
     'N':(0,-1),
     'W':(-1,0)
 }
+''''
+3 4
+SWWW
+SEWN
+EEEN
+
+EWW 
+
+'''
 ans = 0
 def solve1():
     def dfs(y,x,cnt):
