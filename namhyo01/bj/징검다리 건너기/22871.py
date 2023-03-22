@@ -28,6 +28,4 @@ def solve2():
         else:
             left = mid+1
     print(right+1)
-                
-
 solve2()
