@@ -22,7 +22,7 @@ def dfs(x,y):
         nx = x+dx[i]
         ny = y+dy[i]
         if 0<=nx<n and 0<=ny<m:
-           if maps[y][x] > maps[ny][nx]:
+            if maps[y][x] > maps[ny][nx]:
                 dp[y][x] += dfs(nx,ny)
     return dp[y][x]
 dfs(0,0)

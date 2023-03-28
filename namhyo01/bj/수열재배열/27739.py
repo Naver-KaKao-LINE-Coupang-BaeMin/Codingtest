@@ -23,7 +23,7 @@ for i in range(1, len(a)-k):
     ans = max(ans, high_l + l[i-1], low_r + r[i+k])
     if high_l == low_r == k:
         ans = max(ans, l[i-1] + k + r[i+k])
-    
+
 
 # def LIS(arr):
 #     ans = 0

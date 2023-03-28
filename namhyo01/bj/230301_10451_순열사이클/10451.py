@@ -18,6 +18,7 @@ for _ in range(t):
     ans = 0
     for idx, p in enumerate(param):
         graph[idx+1] += [p]
+        
     for i in range(1,n+1):
         if not check[i]:
             dfs(i)
