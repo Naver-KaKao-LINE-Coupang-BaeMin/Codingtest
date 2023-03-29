@@ -59,10 +59,3 @@ for _ in range(n):
             print('da')
         else:
             print('ne')
-
-
-                    
-
-
-        
-            
