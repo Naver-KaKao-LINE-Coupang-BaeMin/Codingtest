@@ -4,9 +4,6 @@ from copy import deepcopy
 input = sys.stdin.readline
 n = int(input())
 students = list(map(int, input().split()))
-'''
-????????????
-'''
 start = 0
 e = float('inf')
 steak = 0
