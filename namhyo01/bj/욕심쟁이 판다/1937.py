@@ -13,7 +13,6 @@ maps = [list(map(int, input().split())) for _ in range(n)]
 def dfs(y,x):
     if dp[y][x] != -1: return dp[y][x]
     dp[y][x] = 1
-
     for i in range(4):
         ny = y+dy[i]
         nx = x+dx[i]
@@ -21,6 +20,7 @@ def dfs(y,x):
             dp[y][x] = max(dp[y][x], dfs(ny,nx)+1)
     return dp[y][x]
 ans = 0
+
 for i in range(n):
     for j in range(n):
         ans = max(ans,dfs(i,j))
